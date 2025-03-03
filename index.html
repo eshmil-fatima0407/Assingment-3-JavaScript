@@ -1,0 +1,318 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUESTION 1</title>
+    <script>
+      let studentNames = [];
+      studentNames.push("ESHMIL");
+      studentNames.push("FATIMA");
+      console.log(studentNames);
+    </script>
+  </head>
+  <body></body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUESTION 2</title>
+    <script>
+      let studentNames = new Array();
+      studentNames.push("ESHMIL");
+      studentNames.push("FATIMA");
+      console.log(studentNames); 
+    </script>
+  </head>
+  <body></body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUESTION 3</title>
+    <script>
+      let fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"];
+      console.log(fruits[0]); 
+      console.log(fruits[2]); 
+      console.log(fruits.length); 
+    </script>
+  </head>
+  <body></body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUESTION 4</title>
+    <script>
+      let numbers = [10, 20, 30, 40, 50];
+      console.log(numbers[0]); 
+      console.log(numbers[2]); 
+      console.log(numbers.length); 
+    </script>
+  </head>
+  <body></body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUESTION 5</title>
+    <script>
+      let boolArray = [true, false, true, false, true];
+      console.log(boolArray[0]); 
+      console.log(boolArray[1]); 
+      console.log(boolArray.length); 
+    </script>
+  </head>
+  <body></body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUESTION 6</title>
+    <script>
+      let mixedArray = ["Apple", 25, true, null, 3.14];
+      console.log(mixedArray[0]); 
+      console.log(mixedArray[1]); 
+      console.log(mixedArray[2]); 
+      console.log(mixedArray[3]); 
+      console.log(mixedArray[4]); 
+    </script>
+  </head>
+  <body></body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUESTION 7</title>
+    <script>
+      let qualifications = ["SSC","HSC", "BCS","BS", "BCOM","MS", "M. Phil.", "PhD" ];
+
+      document.write("<h2>Education Qualifications in Pakistan:</h2>");
+      document.write("<ul>");
+      for (let i = 0; i < qualifications.length; i++) {
+        document.write("<li>" + qualifications[i] + "</li>");
+      }
+      document.write("</ul>");
+    </script>
+  </head>
+  <body></body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUESTION 8</title>
+    <script>
+      let studentNames = ["Ali", "Eshmil", "Fatima"];
+      let studentScores = [450, 380, 420]; 
+      let totalMarks = 500;
+
+      document.write("<h2>Student Scores & Percentages:</h2>");
+
+      for (let i = 0; i < studentNames.length; i++) {
+        let percentage = (studentScores[i] / totalMarks) * 100;
+        document.write("Student: " +  studentNames[i] +  " | Score: " +  studentScores[i] +  " | Percentage: " +  percentage.toFixed(2) + "%<br>");
+      }
+    </script>
+  </head>
+  <body></body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTION 9</title>
+    <script>
+        // Step 1: Initialize an array with color names
+let colors = ["Red", "Green", "Blue", "Yellow"];
+document.write("<h3>Original Colors: </h3>" + colors.join(", ") + "<br>");
+
+// Step 2a: Add color to the beginning
+let colorStart = prompt("Enter a color to add at the beginning:");
+colors.unshift(colorStart);
+document.write("<h3>After Adding Color at Beginning: </h3>" + colors.join(", ") + "<br>");
+
+// Step 2b: Add color to the end
+let colorEnd = prompt("Enter a color to add at the end:");
+colors.push(colorEnd);
+document.write("<h3>After Adding Color at End: </h3>" + colors.join(", ") + "<br>");
+
+// Step 2c: Add two more colors to the beginning
+colors.unshift("Pink", "Purple");
+document.write("<h3>After Adding Two More Colors at Beginning: </h3>" + colors.join(", ") + "<br>");
+
+// Step 2d: Delete the first color
+colors.shift();
+document.write("<h3>After Deleting First Color: </h3>" + colors.join(", ") + "<br>");
+
+// Step 2e: Delete the last color
+colors.pop();
+document.write("<h3>After Deleting Last Color: </h3>" + colors.join(", ") + "<br>");
+
+// Step 2f: Add color at a specific index
+let indexAdd = parseInt(prompt("Enter the index where you want to add a color:"));
+let colorInsert = prompt("Enter the color name:");
+colors.splice(indexAdd, 0, colorInsert);
+document.write("<h3>After Adding Color at Index " + indexAdd + ": </h3>" + colors.join(", ") + "<br>");
+
+// Step 2g: Delete colors at a specific index
+let indexDelete = parseInt(prompt("Enter the index where you want to delete color(s):"));
+let deleteCount = parseInt(prompt("How many colors do you want to delete?"));
+colors.splice(indexDelete, deleteCount);
+document.write("<h3>After Deleting " + deleteCount + " Color(s) from Index " + indexDelete + ": </h3>" + colors.join(", ") + "<br>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+ -->
+
+
+ <!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUESTION 10</title>
+    <script>
+      
+      let studentScores = [85, 72, 90, 68, 95, 78];
+
+      document.write("<h3>Original Student Scores: </h3>" + studentScores.join(", ") + "<br>");
+
+      studentScores.sort((a, b) => a - b);
+      document.write("<h3>Sorted Student Scores (Ascending Order): </h3>" + studentScores.join(", ") + "<br>" );
+    </script>
+  </head>
+  <body></body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTION 11</title>
+    <script>
+       
+let cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
+
+
+let selectedCities = cities.slice(1, 4); 
+
+document.write("<h3>All Cities: </h3>" + cities.join(", ") + "<br>");
+document.write("<h3>Selected Cities: </h3>" + selectedCities.join(", ") + "<br>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUESTION 12</title>
+    <script>
+      
+      var arr = ["This", "is", "my", "cat"];
+
+      var sentence = arr.join(" "); 
+      
+      document.write("<h3>Array: </h3>" + arr + "<br>");
+      document.write("<h3>Single String: </h3>" + sentence);
+    </script>
+  </head>
+  <body></body>
+</html>
+ -->
+
+ <!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUESTION 13</title>
+    <script>
+      
+      var queue = [];
+
+     
+      queue.push("Keyboard");
+      queue.push("Mouse");
+      queue.push("printer");
+      queue.push("moniter");
+     
+      document.write("<h3>Divices:</h3> " + queue + "<br>");
+
+      
+      document.write("<h3>Processing (FIFO):</h3>");
+      document.write(queue.shift() + "<br>"); 
+      document.write(queue.shift() + "<br>"); 
+      document.write(queue.shift() + "<br>"); 
+      document.write(queue.shift() + "<br>"); 
+    </script>
+  </head>
+  <body></body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUESTION 14</title>
+    <script>
+      
+      var phoneManufacturers = ["Apple","Samsung","Motorola","Nokia","Sony","Haier",];
+
+      
+      document.write("<label for='phones'>Choose a phone brand:</label>");
+      document.write("<select id='phones'>");
+
+      
+      for (var i = 0; i < phoneManufacturers.length; i++) {
+        document.write("<option value='" +  phoneManufacturers[i] +  "'>" + phoneManufacturers[i] + "</option>" );
+      }
+
+      
+      document.write("</select>");
+    </script>
+  </head>
+  <body></body>
+</html> -->
+
